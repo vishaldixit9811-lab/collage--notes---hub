@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>C Programming Unit 2 - College Notes Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">College Notes Hub</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="c-programming.html">C Programming</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Page Header -->
+    <section class="subject-header">
+
+        <h1>C Programming — Unit 2</h1>
+
+        <p>Arrays and Strings</p>
+
+        <p>Easy English notes and programming examples for BCA students.</p>
+
+    </section>
+
+    <!-- Notes Section -->
+    <section class="unit-section">
+
+        <!-- Topic 1 -->
+        <div class="unit-card">
+
+            <h3>1. What is an Array?</h3>
+
+            <p>
+                An array is a collection of elements of the same data type
+                stored under one name. Each element is accessed using an index.
+            </p>
+
+            <p><strong>Example:</strong> An array can store marks of five students.</p>
+
+            <pre><code>int marks[5] = {70, 80, 65, 90, 75};</code></pre>
+
+        </div>
+
+        <!-- Topic 2 -->
+        <div class="unit-card">
+
+            <h3>2. One-Dimensional Array</h3>
+
+            <p>
+                A one-dimensional array stores elements in a single sequence.
+                In C, array indexing starts at 0.
+            </p>
+
+            <pre><code>#include &lt;stdio.h&gt;
+
+int main(void)
+{
+    int numbers[3] = {10, 20, 30};
+
+    printf("%d", numbers[0]);
+
+    return 0;
+}</code></pre>
+
+            <p><strong>Output:</strong> 10</p>
+
+        </div>
+
+        <!-- Topic 3 -->
+        <div class="unit-card">
+
+            <h3>3. Two-Dimensional Array</h3>
+
+            <p>
+                A two-dimensional array stores data in rows and columns.
+                It is commonly used to represent a matrix.
+            </p>
+
+            <pre><code>int matrix[2][2] = {
+    {1, 2},
+    {3, 4}
+};</code></pre>
+
+        </div>
+
+        <!-- Topic 4 -->
+        <div class="unit-card">
+
+            <h3>4. What is a String?</h3>
+
+            <p>
+                A string in C is a sequence of characters ending with
+                the null character, written as '\0'.
+            </p>
+
+            <pre><code>char name[] = "Vishal";</code></pre>
+
+        </div>
+
+        <!-- Topic 5 -->
+        <div class="unit-card">
+
+            <h3>5. Common String Functions</h3>
+
+            <p>
+                The string.h header provides functions for working with strings.
+            </p>
+
+            <ul>
+                <li><code>strlen()</code> — finds the string length.</li>
+                <li><code>strcpy()</code> — copies a string.</li>
+                <li><code>strcmp()</code> — compares two strings.</li>
+                <li><code>strcat()</code> — joins two strings.</li>
+            </ul>
+
+            <p>
+                These functions are declared in the
+                <code>&lt;string.h&gt;</code> header.
+            </p>
+
+        </div>
+
+        <!-- Back Link -->
+        <a href="c-programming.html" class="back-button">
+            Back to C Programming
+        </a>
+
+    </section>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>C Programming Unit 2 - College Notes Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">College Notes Hub</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="c-programming.html">C Programming</a></li>
+        </ul>
+    </nav>
+
+    <section class="subject-header">
+        <h1>C Programming — Unit 2</h1>
+        <p>Arrays and Strings</p>
+        <p>Easy English notes for BCA students.</p>
+    </section>
+
+    <section class="unit-section">
+
+        <div class="unit-card">
+            <h3>1. What is an Array?</h3>
+
+            <p>
+                An array is a collection of elements of the
+                same data type stored under one name.
+            </p>
+
+            <p><strong>Example:</strong></p>
+
+            <pre><code>int marks[5] = {70, 80, 65, 90, 75};</code></pre>
+
+            <p>
+                Here, marks is an integer array containing
+                five elements. Array indexing starts at 0.
+            </p>
+        </div>
+
+        <div class="unit-card">
+            <h3>2. One-Dimensional Array</h3>
+
+            <p>
+                A one-dimensional array stores elements in
+                a single sequence.
+            </p>
+
+            <pre><code>#include &lt;stdio.h&gt;
+
+int main(void)
+{
+    int numbers[3] = {10, 20, 30};
+
+    printf("%d\n", numbers[0]);
+    printf("%d\n", numbers[1]);
+    printf("%d\n", numbers[2]);
+
+    return 0;
+}</code></pre>
+
+            <p><strong>Output:</strong></p>
+
+            <pre><code>10
+20
+30</code></pre>
+        </div>
+
+        <div class="unit-card">
+            <h3>3. Two-Dimensional Array</h3>
+
+            <p>
+                A two-dimensional array stores data in rows
+                and columns. It is useful for representing
+                tables and matrices.
+            </p>
+
+            <pre><code>int matrix[2][2] = {
+    {1, 2},
+    {3, 4}
+};</code></pre>
+        </div>
+
+        <div class="unit-card">
+            <h3>4. What is a String?</h3>
+
+            <p>
+                In C, a string is a sequence of characters
+                terminated by the null character '\0'.
+            </p>
+
+            <pre><code>char name[] = "Vishal";</code></pre>
+
+            <p>
+                The compiler includes the terminating null
+                character in this array.
+            </p>
+        </div>
+
+        <div class="unit-card">
+            <h3>5. Common String Functions</h3>
+
+            <p>
+                The string.h header provides common string
+                functions.
+            </p>
+
+            <ul>
+                <li>strlen() — finds string length.</li>
+                <li>strcpy() — copies a string.</li>
+                <li>strcat() — joins strings.</li>
+                <li>strcmp() — compares strings.</li>
+            </ul>
+
+            <pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main(void)
+{
+    char name[] = "Hello";
+
+    printf("%zu", strlen(name));
+
+    return 0;
+}</code></pre>
+
+            <p><strong>Output:</strong> 5</p>
+        </div>
+
+        <a href="c-programming.html" class="back-button">
+            Back to C Programming
+        </a>
+
+    </section>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>C Programming Unit 2 - College Notes Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">College Notes Hub</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="c-programming.html">C Programming</a></li>
+        </ul>
+    </nav>
+
+    <section class="subject-header">
+        <h1>C Programming — Unit 2</h1>
+        <p>Arrays and Strings</p>
+        <p>Easy English notes for BCA students.</p>
+    </section>
+
+    <section class="unit-section">
+
+        <div class="unit-card">
+            <h3>1. What is an Array?</h3>
+
+            <p>
+                An array is a collection of elements of the
+                same data type stored under one name.
+            </p>
+
+            <p><strong>Example:</strong></p>
+
+            <pre><code>int marks[5] = {70, 80, 65, 90, 75};</code></pre>
+
+            <p>
+                Here, marks is an integer array containing
+                five elements. Array indexing starts at 0.
+            </p>
+        </div>
+
+        <div class="unit-card">
+            <h3>2. One-Dimensional Array</h3>
+
+            <p>
+                A one-dimensional array stores elements in
+                a single sequence.
+            </p>
+
+            <pre><code>#include &lt;stdio.h&gt;
+
+int main(void)
+{
+    int numbers[3] = {10, 20, 30};
+
+    printf("%d\n", numbers[0]);
+    printf("%d\n", numbers[1]);
+    printf("%d\n", numbers[2]);
+
+    return 0;
+}</code></pre>
+
+            <p><strong>Output:</strong></p>
+
+            <pre><code>10
+20
+30</code></pre>
+        </div>
+
+        <div class="unit-card">
+            <h3>3. Two-Dimensional Array</h3>
+
+            <p>
+                A two-dimensional array stores data in rows
+                and columns. It is useful for representing
+                tables and matrices.
+            </p>
+
+            <pre><code>int matrix[2][2] = {
+    {1, 2},
+    {3, 4}
+};</code></pre>
+        </div>
+
+        <div class="unit-card">
+            <h3>4. What is a String?</h3>
+
+            <p>
+                In C, a string is a sequence of characters
+                terminated by the null character '\0'.
+            </p>
+
+            <pre><code>char name[] = "Vishal";</code></pre>
+
+            <p>
+                The compiler includes the terminating null
+                character in this array.
+            </p>
+        </div>
+
+        <div class="unit-card">
+            <h3>5. Common String Functions</h3>
+
+            <p>
+                The string.h header provides common string
+                functions.
+            </p>
+
+            <ul>
+                <li>strlen() — finds string length.</li>
+                <li>strcpy() — copies a string.</li>
+                <li>strcat() — joins strings.</li>
+                <li>strcmp() — compares strings.</li>
+            </ul>
+
+            <pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main(void)
+{
+    char name[] = "Hello";
+
+    printf("%zu", strlen(name));
+
+    return 0;
+}</code></pre>
+
+            <p><strong>Output:</strong> 5</p>
+        </div>
+
+        <a href="c-programming.html" class="back-button">
+            Back to C Programming
+        </a>
+
+    </section>
+
+</body>
+</html>
